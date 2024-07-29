@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safe URL Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 300px;
+      background-color: #f5f5f5;
+      margin: 0;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #checkButton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #checkButton:hover {
+      background-color: #0056b3;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+    }
+    #status.safe {
+      background-color: #28a745;
+    }
+    #status.unsafe {
+      background-color: #dc3545;
+    }
+    #icon {
+      display: block;
+      margin: 0 auto 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <img id="icon" src="icons/safe.svg" alt="Safe URL Checker Icon">
+  <h1>Safe URL Checker</h1>
+  <button id="checkButton">Check Current URL</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
